@@ -1,0 +1,106 @@
+German,English,Gender (noun),Part of Speech,Example (German),Example (English),Theme
+der Hund,the dog,masculine,noun,Der Hund schläft auf dem Sofa.,The dog is sleeping on the sofa.,Animals
+die Katze,the cat,feminine,noun,Die Katze sitzt am Fenster.,The cat sits at the window.,Animals
+das Pferd,the horse,neuter,noun,Das Pferd läuft über die Wiese.,The horse runs across the meadow.,Animals
+der Vogel,the bird,masculine,noun,Der Vogel singt am Morgen.,The bird sings in the morning.,Animals
+der Fisch,the fish,masculine,noun,Ich esse gerne Fisch.,I like eating fish.,Animals
+die Küche,the kitchen,feminine,noun,Ich koche in der Küche.,I cook in the kitchen.,Home
+das Zimmer,the room,neuter,noun,Das Zimmer ist sehr groß.,The room is very large.,Home
+das Fenster,the window,neuter,noun,Bitte schließ das Fenster.,Please close the window.,Home
+die Tür,the door,feminine,noun,Die Tür ist offen.,The door is open.,Home
+das Bett,the bed,neuter,noun,Ich gehe ins Bett.,I'm going to bed.,Home
+der Tisch,the table,masculine,noun,Stell das Glas auf den Tisch.,Put the glass on the table.,Home
+der Stuhl,the chair,masculine,noun,Der Stuhl steht am Tisch.,The chair stands at the table.,Home
+das Wasser,the water,neuter,noun,Kannst du mir Wasser geben?,Can you give me some water?,Food & Drink
+das Brot,the bread,neuter,noun,Ich esse morgens Brot.,I eat bread in the morning.,Food & Drink
+die Milch,the milk,feminine,noun,Die Milch ist kalt.,The milk is cold.,Food & Drink
+der Kaffee,the coffee,masculine,noun,Ich trinke jeden Morgen Kaffee.,I drink coffee every morning.,Food & Drink
+das Fleisch,the meat,neuter,noun,Er isst kein Fleisch.,He doesn't eat meat.,Food & Drink
+das Gemüse,the vegetables,neuter,noun,Das Gemüse kommt vom Markt.,The vegetables come from the market.,Food & Drink
+die Suppe,the soup,feminine,noun,Die Suppe ist heiß.,The soup is hot.,Food & Drink
+der Kuchen,the cake,masculine,noun,Hast du den Kuchen gebacken?,Did you bake the cake?,Food & Drink
+gehen,to go,,verb,Ich gehe jeden Tag spazieren.,I go for a walk every day.,Verbs – Movement
+kommen,to come,,verb,Wann kommst du?,When are you coming?,Verbs – Movement
+fahren,to drive / to travel,,verb,Wir fahren nach Berlin.,We are driving to Berlin.,Verbs – Movement
+laufen,to walk / to run,,verb,Die Kinder laufen im Park.,The children are running in the park.,Verbs – Movement
+fliegen,to fly,,verb,Das Flugzeug fliegt über die Wolken.,The plane flies above the clouds.,Verbs – Movement
+essen,to eat,,verb,Was möchtest du essen?,What would you like to eat?,Verbs – Daily life
+trinken,to drink,,verb,Er trinkt viel Wasser.,He drinks a lot of water.,Verbs – Daily life
+schlafen,to sleep,,verb,Das Baby schläft.,The baby is sleeping.,Verbs – Daily life
+arbeiten,to work,,verb,Sie arbeitet in einem Büro.,She works in an office.,Verbs – Daily life
+kaufen,to buy,,verb,Ich kaufe heute ein.,I'm going shopping today.,Verbs – Daily life
+lesen,to read,,verb,Er liest ein Buch.,He is reading a book.,Verbs – Daily life
+schreiben,to write,,verb,Sie schreibt einen Brief.,She is writing a letter.,Verbs – Daily life
+sprechen,to speak,,verb,Sprichst du Deutsch?,Do you speak German?,Verbs – Daily life
+hören,to hear / to listen,,verb,Ich höre Musik.,I am listening to music.,Verbs – Daily life
+sehen,to see,,verb,Ich sehe dich.,I see you.,Verbs – Daily life
+wissen,to know (a fact),,verb,Ich weiß es nicht.,I don't know.,Verbs – Knowledge & thought
+kennen,to know (a person or place),,verb,Ich kenne diesen Mann nicht.,I don't know this man.,Verbs – Knowledge & thought
+denken,to think,,verb,Was denkst du?,What do you think?,Verbs – Knowledge & thought
+verstehen,to understand,,verb,Ich verstehe das nicht.,I don't understand that.,Verbs – Knowledge & thought
+vergessen,to forget,,verb,Ich habe meinen Schlüssel vergessen.,I forgot my key.,Verbs – Knowledge & thought
+groß,big / tall,,adjective,Er ist sehr groß.,He is very tall.,Adjectives – Size & appearance
+klein,small / short,,adjective,Die Wohnung ist klein.,The apartment is small.,Adjectives – Size & appearance
+alt,old,,adjective,Das Haus ist sehr alt.,The house is very old.,Adjectives – Size & appearance
+neu,new,,adjective,Ich habe ein neues Auto.,I have a new car.,Adjectives – Size & appearance
+schön,beautiful / nice,,adjective,Das ist ein schöner Tag.,It is a beautiful day.,Adjectives – Size & appearance
+schnell,fast,,adjective,Der Zug ist sehr schnell.,The train is very fast.,Adjectives – Quality
+langsam,slow,,adjective,Fahr bitte langsamer.,Please drive more slowly.,Adjectives – Quality
+gut,good,,adjective,Das Essen ist sehr gut.,The food is very good.,Adjectives – Quality
+schlecht,bad,,adjective,Das Wetter ist schlecht.,The weather is bad.,Adjectives – Quality
+kalt,cold,,adjective,Es ist heute sehr kalt.,It is very cold today.,Adjectives – Quality
+heiß,hot,,adjective,Der Kaffee ist heiß.,The coffee is hot.,Adjectives – Quality
+müde,tired,,adjective,Ich bin sehr müde.,I am very tired.,Adjectives – State
+krank,sick / ill,,adjective,Er ist krank und bleibt zuhause.,He is sick and staying home.,Adjectives – State
+glücklich,happy,,adjective,Sie ist sehr glücklich.,She is very happy.,Adjectives – State
+traurig,sad,,adjective,Warum bist du so traurig?,Why are you so sad?,Adjectives – State
+der Montag,Monday,masculine,noun,Am Montag habe ich eine Besprechung.,I have a meeting on Monday.,Time
+der Dienstag,Tuesday,masculine,noun,Wir treffen uns am Dienstag.,We meet on Tuesday.,Time
+der Mittwoch,Wednesday,masculine,noun,Mittwoch ist mein freier Tag.,Wednesday is my day off.,Time
+der Donnerstag,Thursday,masculine,noun,Am Donnerstag gehe ich einkaufen.,I go shopping on Thursday.,Time
+der Freitag,Friday,masculine,noun,Am Freitag beginnt das Wochenende.,The weekend starts on Friday.,Time
+der Samstag,Saturday,masculine,noun,Ich schlafe samstags länger.,I sleep longer on Saturdays.,Time
+der Sonntag,Sunday,masculine,noun,Sonntags essen wir gemeinsam.,On Sundays we eat together.,Time
+heute,today,,adverb,Was machst du heute?,What are you doing today?,Time
+gestern,yesterday,,adverb,Ich war gestern in Berlin.,I was in Berlin yesterday.,Time
+morgen,tomorrow,,adverb,Morgen fahre ich ab.,I am leaving tomorrow.,Time
+jetzt,now,,adverb,Ich bin jetzt bereit.,I am ready now.,Time
+immer,always,,adverb,Er kommt immer zu spät.,He always arrives late.,Time
+manchmal,sometimes,,adverb,Manchmal lese ich nachts.,Sometimes I read at night.,Time
+nie,never,,adverb,Ich trinke nie Alkohol.,I never drink alcohol.,Time
+oft,often,,adverb,Wir gehen oft ins Kino.,We often go to the cinema.,Time
+die Straße,the street,feminine,noun,Die Straße ist sehr belebt.,The street is very busy.,City & Travel
+der Bahnhof,the train station,masculine,noun,Wo ist der Bahnhof?,Where is the train station?,City & Travel
+das Flugzeug,the airplane,neuter,noun,Das Flugzeug landet um 10 Uhr.,The plane lands at 10 o'clock.,City & Travel
+der Zug,the train,masculine,noun,Der Zug fährt pünktlich ab.,The train departs on time.,City & Travel
+das Auto,the car,neuter,noun,Mein Auto ist in der Werkstatt.,My car is in the garage.,City & Travel
+die Apotheke,the pharmacy,feminine,noun,Die Apotheke ist um die Ecke.,The pharmacy is around the corner.,City & Travel
+das Krankenhaus,the hospital,neuter,noun,Er liegt im Krankenhaus.,He is in the hospital.,City & Travel
+der Supermarkt,the supermarket,masculine,noun,Ich gehe zum Supermarkt.,I'm going to the supermarket.,City & Travel
+die Schule,the school,feminine,noun,Die Kinder gehen in die Schule.,The children go to school.,City & Travel
+die Arbeit,the work / job,feminine,noun,Ich gehe zur Arbeit.,I'm going to work.,Work & Study
+das Büro,the office,neuter,noun,Er arbeitet im Büro.,He works in the office.,Work & Study
+die Besprechung,the meeting,feminine,noun,Die Besprechung beginnt um 9 Uhr.,The meeting starts at 9 o'clock.,Work & Study
+die Aufgabe,the task / assignment,feminine,noun,Die Aufgabe ist schwierig.,The task is difficult.,Work & Study
+der Chef,the boss,masculine,noun,Mein Chef ist sehr streng.,My boss is very strict.,Work & Study
+die Kollegin,the (female) colleague,feminine,noun,Meine Kollegin hilft mir.,My colleague helps me.,Work & Study
+ich,I,,pronoun,Ich bin müde.,I am tired.,Pronouns & Grammar
+du,you (informal),,pronoun,Du hast recht.,You are right.,Pronouns & Grammar
+er,he,,pronoun,Er kommt morgen.,He is coming tomorrow.,Pronouns & Grammar
+sie,she / they,,pronoun,Sie schläft noch.,She is still sleeping.,Pronouns & Grammar
+wir,we,,pronoun,Wir gehen zusammen.,We are going together.,Pronouns & Grammar
+ihr,you (plural informal),,pronoun,Habt ihr Zeit?,Do you have time?,Pronouns & Grammar
+Sie,you (formal),,pronoun,Sprechen Sie Deutsch?,Do you speak German?,Pronouns & Grammar
+weil,because,,conjunction,Ich bleibe zuhause weil ich krank bin.,I am staying home because I am sick.,Pronouns & Grammar
+obwohl,although,,conjunction,Obwohl es regnet gehe ich spazieren.,Although it is raining I am going for a walk.,Pronouns & Grammar
+dass,that,,conjunction,Ich denke dass es stimmt.,I think that it is correct.,Pronouns & Grammar
+Wie geht es Ihnen?,How are you? (formal),,phrase,Wie geht es Ihnen heute?,How are you today?,Phrases
+Wie geht's?,How are you? (informal),,phrase,Hey! Wie geht's?,Hey! How are you?,Phrases
+Danke schön.,Thank you very much.,,phrase,Danke schön für Ihre Hilfe.,Thank you very much for your help.,Phrases
+Bitte.,Please. / You're welcome.,,phrase,Kannst du bitte kommen?,Can you please come?,Phrases
+Entschuldigung.,Excuse me. / Sorry.,,phrase,Entschuldigung wo ist die Toilette?,Excuse me where is the toilet?,Phrases
+Es tut mir leid.,I am sorry.,,phrase,Es tut mir leid das war mein Fehler.,I am sorry that was my mistake.,Phrases
+Ich verstehe das nicht.,I don't understand that.,,phrase,Können Sie das wiederholen? Ich verstehe das nicht.,Can you repeat that? I don't understand that.,Phrases
+Können Sie das bitte wiederholen?,Can you please repeat that?,,phrase,Ich habe Sie nicht gehört. Können Sie das bitte wiederholen?,I didn't hear you. Can you please repeat that?,Phrases
+Ich hätte gerne…,I would like…,,phrase,Ich hätte gerne einen Kaffee bitte.,I would like a coffee please.,Phrases
+Was kostet das?,How much does that cost?,,phrase,Was kostet das Ticket?,How much does the ticket cost?,Phrases

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#1a1a2e">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Lingvo Tutor</title>
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>">
+  <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>">
+  <link rel="stylesheet" href="/style.css?v=11">
+</head>
+<body>
+  <div id="app">
+    <!-- Login -->
+    <div id="screen-login" class="screen active">
+      <div class="login-card">
+        <h1>📖 Lingvo Tutor</h1>
+        <p class="subtitle">English ↔ Deutsch <small style="opacity:0.4">v11</small></p>
+        <form id="login-form">
+          <input type="password" id="login-password" placeholder="Password" autocomplete="current-password" required>
+          <button type="submit" class="btn btn-primary">Log in</button>
+        </form>
+        <p id="login-error" class="error" hidden></p>
+      </div>
+    </div>
+
+    <!-- Menu -->
+    <div id="screen-menu" class="screen">
+      <header>
+        <h1>📖 Lingvo Tutor</h1>
+        <button id="btn-logout" class="btn-icon" title="Log out">⎋</button>
+      </header>
+      <div class="menu-stats" id="menu-stats"></div>
+      <div class="menu-grid">
+        <button class="menu-btn" data-action="quiz-en-de">
+          <span class="menu-icon">🇬🇧→🇩🇪</span>
+          <span>English → Deutsch</span>
+        </button>
+        <button class="menu-btn" data-action="quiz-de-en">
+          <span class="menu-icon">🇩🇪→🇬🇧</span>
+          <span>Deutsch → English</span>
+        </button>
+        <button class="menu-btn" data-action="quiz-mixed">
+          <span class="menu-icon">🔀</span>
+          <span>Mixed</span>
+        </button>
+        <button class="menu-btn" data-action="browse">
+          <span class="menu-icon">📋</span>
+          <span>Browse words</span>
+        </button>
+        <button class="menu-btn" data-action="manage">
+          <span class="menu-icon">📝</span>
+          <span>Manage words</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Quiz -->
+    <div id="screen-quiz" class="screen">
+      <header>
+        <button id="btn-quit-quiz" class="btn-icon">←</button>
+        <div class="quiz-progress">
+          <span id="quiz-counter">1 / 10</span>
+          <div class="progress-bar"><div id="quiz-bar" class="progress-fill"></div></div>
+        </div>
+        <div class="quiz-score" id="quiz-score">0</div>
+      </header>
+      <div class="quiz-card">
+        <div class="quiz-direction" id="quiz-direction"></div>
+        <div class="quiz-word" id="quiz-word"></div>
+        <form id="quiz-form">
+          <input type="text" id="quiz-input" placeholder="Type translation…"
+                 autocomplete="off" autocapitalize="off" spellcheck="false">
+          <div class="btn-row">
+            <button type="button" class="btn btn-skip" id="btn-skip">Skip</button>
+            <button type="submit" class="btn btn-primary" id="btn-check">Check</button>
+          </div>
+        </form>
+        <div id="quiz-feedback" class="quiz-feedback" hidden>
+          <div class="fb-head">
+            <span id="feedback-icon"></span>
+            <span id="feedback-label"></span>
+            <span id="feedback-streak" class="fb-streak"></span>
+          </div>
+          <div id="feedback-yours" class="fb-yours" hidden></div>
+          <div class="fb-caption">Translation</div>
+          <div id="feedback-answers" class="fb-answers"></div>
+          <button class="btn btn-primary" id="btn-next">Next →</button>
+        </div>
+      </div>
+      <section id="quiz-notes" class="notes-card" hidden>
+        <div class="notes-title">About this word <span id="quiz-notes-word"></span></div>
+        <div id="quiz-notes-body" class="notes-body"></div>
+      </section>
+      <div id="quiz-hint" class="quiz-hint" hidden></div>
+    </div>
+
+    <!-- Results -->
+    <div id="screen-results" class="screen">
+      <div class="results-card">
+        <h2>Session complete</h2>
+        <div class="results-score" id="results-score"></div>
+        <div class="results-detail" id="results-detail"></div>
+        <div class="results-actions">
+          <button class="btn btn-primary" id="btn-again">Go again</button>
+          <button class="btn btn-secondary" id="btn-back-menu">Menu</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Browse words -->
+    <div id="screen-browse" class="screen">
+      <header>
+        <button class="btn-icon" data-action="menu">←</button>
+        <h2>All words</h2>
+        <select id="browse-filter" class="browse-filter">
+          <option value="all">All</option>
+          <option value="learning">Learning</option>
+          <option value="mastered">Mastered</option>
+        </select>
+      </header>
+      <div class="search-bar">
+        <input type="text" id="browse-search" placeholder="Search…" autocomplete="off" autocapitalize="off" spellcheck="false">
+      </div>
+      <div id="browse-list" class="browse-list"></div>
+      <div id="browse-empty" class="empty-state" hidden>No words match this filter.</div>
+    </div>
+
+    <!-- Manage words -->
+    <div id="screen-manage" class="screen">
+      <header>
+        <button class="btn-icon" data-action="menu">←</button>
+        <h2>Word list</h2>
+        <button class="btn-icon" id="btn-add-word" title="Add word">＋</button>
+      </header>
+      <div id="add-word-form" class="add-panel" hidden>
+        <div class="add-panel-title" id="add-panel-title">Add a word</div>
+        <label class="field">
+          <span class="field-label">Paste Claude's answer <small>— fills the fields below</small></span>
+          <textarea id="add-paste" rows="4" placeholder="Aussteigen&#10;English Translation: &quot;To get out&quot; / &quot;To exit&quot; / &quot;To alight&quot;&#10;Explanation&#10;…"></textarea>
+        </label>
+        <div class="add-fields">
+          <label class="field">
+            <span class="field-label">Deutsch</span>
+            <input type="text" id="add-de" placeholder="Aussteigen" autocomplete="off">
+          </label>
+          <label class="field">
+            <span class="field-label">English <small>— answers accepted, separated by ;</small></span>
+            <input type="text" id="add-en" placeholder="to get out; to exit" autocomplete="off">
+          </label>
+          <label class="field">
+            <span class="field-label">Notes <small>— shown after you answer, not checked</small></span>
+            <textarea id="add-notes" rows="5" placeholder="Explanation, examples, grammar…"></textarea>
+          </label>
+        </div>
+        <div id="add-preview-wrap" class="add-preview" hidden>
+          <div class="field-label">Preview</div>
+          <div class="notes-card">
+            <div class="notes-title">About this word <span id="add-preview-word"></span></div>
+            <div id="add-preview" class="notes-body"></div>
+          </div>
+        </div>
+        <p id="add-status" class="add-status" hidden></p>
+        <div class="add-actions">
+          <button class="btn btn-secondary btn-sm" id="btn-cancel-word" type="button">Close</button>
+          <button class="btn btn-primary btn-sm" id="btn-save-word" type="button">Add word</button>
+        </div>
+      </div>
+      <div class="manage-tools">
+        <button class="btn btn-sm" id="btn-export">Export CSV</button>
+        <label class="btn btn-sm">
+          Import CSV
+          <input type="file" id="file-import" accept=".csv" hidden>
+        </label>
+      </div>
+      <div class="search-bar">
+        <input type="text" id="manage-search" placeholder="Search…" autocomplete="off" autocapitalize="off" spellcheck="false">
+      </div>
+      <div id="word-list" class="word-list"></div>
+      <div id="word-list-empty" class="empty-state" hidden>
+        No words yet. Add some above or import a CSV.
+      </div>
+    </div>
+  </div>
+  <script src="/app.js?v=11"></script>
+</body>
+</html>
