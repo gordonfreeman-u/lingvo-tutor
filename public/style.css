@@ -280,6 +280,13 @@ input:focus { border-color: var(--accent); }
 @media (min-height: 701px) {
   .quiz-card { margin-top: 28vh; }
 }
+/* Phone: drop the card a little so Skip and Check sit closer to the thumb. */
+@media (max-width: 600px) and (max-height: 700px) {
+  .quiz-card { margin-top: 16vh; }
+}
+@media (max-width: 600px) and (min-height: 701px) {
+  .quiz-card { margin-top: 36vh; }
+}
 .quiz-direction {
   font-size: 0.8rem;
   color: var(--text-secondary);
