@@ -295,10 +295,20 @@ function showResults() {
 
   document.getElementById('quiz-bar').style.width = '100%';
   showScreen('results');
+  // Auto-focus "Go again" so Enter immediately triggers it
+  document.getElementById('btn-again').focus();
 }
 
 document.getElementById('btn-again').addEventListener('click', () => startQuiz(lastDirection));
 document.getElementById('btn-back-menu').addEventListener('click', () => showScreen('menu'));
+
+// On the results screen, Enter = Go again (matches auto-focused button)
+document.getElementById('screen-results').addEventListener('keydown', e => {
+  if (e.key === 'Enter') {
+    e.preventDefault();
+    document.getElementById('btn-again').click();
+  }
+});
 
 // === Word management ===
 let manageWords = [];
