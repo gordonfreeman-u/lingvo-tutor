@@ -260,7 +260,12 @@ function advanceQuiz() {
   }
 }
 
-document.getElementById('btn-next').addEventListener('click', advanceQuiz);
+document.getElementById('btn-next').addEventListener('click', () => {
+  advanceQuiz();
+  // Focus the input immediately within the user-gesture tick so mobile browsers honour it
+  const input = document.getElementById('quiz-input');
+  if (!input.disabled) input.focus();
+});
 
 // Enter key advances to next word when feedback is showing
 document.addEventListener('keydown', (e) => {
