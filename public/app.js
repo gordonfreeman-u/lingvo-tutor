@@ -145,6 +145,13 @@ function showQuestion() {
   const feedback = document.getElementById('quiz-feedback');
   const hint = document.getElementById('quiz-hint');
 
+  // Disable autocorrect/spellcheck for German answers; enable for English
+  const expectingGerman = dir === 'en_de';
+  input.setAttribute('autocorrect', expectingGerman ? 'off' : 'on');
+  input.setAttribute('autocapitalize', expectingGerman ? 'off' : 'sentences');
+  input.setAttribute('spellcheck', String(!expectingGerman));
+  input.setAttribute('lang', expectingGerman ? 'de' : 'en');
+
   input.value = '';
   input.disabled = false;
   form.hidden = false;
