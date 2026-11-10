@@ -305,7 +305,29 @@ input:focus { border-color: var(--accent); }
   flex-direction: column;
   gap: 10px;
 }
-#quiz-form input { width: 100%; }
+.quiz-input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.quiz-input-wrap input { width: 100%; padding-right: 40px; }
+.btn-clear-input {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 1.25rem;
+  line-height: 1;
+  padding: 2px 4px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: color 0.15s, background 0.15s;
+}
+.btn-clear-input:hover {
+  color: var(--text);
+  background: var(--surface-alt);
+}
 .btn-row {
   display: flex;
   gap: 8px;

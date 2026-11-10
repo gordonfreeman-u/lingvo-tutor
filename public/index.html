@@ -72,8 +72,11 @@
         <div class="quiz-direction" id="quiz-direction"></div>
         <div class="quiz-word" id="quiz-word"></div>
         <form id="quiz-form">
-          <input type="text" id="quiz-input" placeholder="Type translation…"
-                 autocomplete="off" autocapitalize="off" spellcheck="false">
+          <div class="quiz-input-wrap">
+            <input type="text" id="quiz-input" placeholder="Type translation…"
+                   autocomplete="off" autocapitalize="off" spellcheck="false">
+            <button type="button" id="btn-clear-input" class="btn-clear-input" aria-label="Clear input" hidden>×</button>
+          </div>
           <div class="btn-row">
             <button type="button" class="btn btn-skip" id="btn-skip">Skip</button>
             <button type="submit" class="btn btn-primary" id="btn-check">Check</button>

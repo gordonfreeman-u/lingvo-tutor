@@ -150,6 +150,7 @@ function showQuestion() {
   form.hidden = false;
   feedback.hidden = true;
   hint.hidden = true;
+  document.getElementById('btn-clear-input').hidden = true;
   document.getElementById('quiz-notes').hidden = true;
   document.getElementById('screen-quiz').classList.remove('revealed');
   document.getElementById('screen-quiz').scrollTop = 0;
@@ -224,6 +225,20 @@ document.getElementById('quiz-form').addEventListener('submit', (e) => {
   if (!answer) return;
   doSubmitAnswer(answer);
 });
+
+// Clear button: show when input has text, clear on click
+(function () {
+  const quizInput = document.getElementById('quiz-input');
+  const clearBtn  = document.getElementById('btn-clear-input');
+  quizInput.addEventListener('input', () => {
+    clearBtn.hidden = quizInput.value.length === 0;
+  });
+  clearBtn.addEventListener('click', () => {
+    quizInput.value = '';
+    clearBtn.hidden = true;
+    quizInput.focus();
+  });
+}());
 
 document.getElementById('btn-skip').addEventListener('click', () => {
   doSubmitAnswer('');
