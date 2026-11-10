@@ -229,7 +229,7 @@ async function doSubmitAnswer(answer) {
 document.getElementById('quiz-form').addEventListener('submit', (e) => {
   e.preventDefault();
   const answer = document.getElementById('quiz-input').value.trim();
-  if (!answer) return;
+  if (!answer) { doSubmitAnswer(''); return; }
   doSubmitAnswer(answer);
 });
 
