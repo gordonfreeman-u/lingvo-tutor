@@ -145,11 +145,11 @@ function showQuestion() {
   const feedback = document.getElementById('quiz-feedback');
   const hint = document.getElementById('quiz-hint');
 
-  // Disable autocorrect/spellcheck for German answers; enable for English
-  const expectingGerman = dir === 'en_de';
-  input.setAttribute('autocorrect', expectingGerman ? 'off' : 'on');
-  input.setAttribute('autocapitalize', expectingGerman ? 'off' : 'sentences');
-  input.setAttribute('spellcheck', String(!expectingGerman));
+  // Keep autocorrect/autocapitalize/spellcheck off for all quiz answers
+  // so the comparison stays case-insensitive (backend normalises to lowercase)
+  input.setAttribute('autocorrect', 'off');
+  input.setAttribute('autocapitalize', 'off');
+  input.setAttribute('spellcheck', 'false');
   input.setAttribute('lang', expectingGerman ? 'de' : 'en');
 
   input.value = '';
@@ -228,7 +228,7 @@ async function doSubmitAnswer(answer) {
 
 document.getElementById('quiz-form').addEventListener('submit', (e) => {
   e.preventDefault();
-  const answer = document.getElementById('quiz-input').value.trim();
+  const answer = document.getElementById('quiz-input').value.trim().toLowerCase();
   if (!answer) { doSubmitAnswer(''); return; }
   doSubmitAnswer(answer);
 });
