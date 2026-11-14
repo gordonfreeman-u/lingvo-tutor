@@ -150,7 +150,7 @@ function showQuestion() {
   input.setAttribute('autocorrect', 'off');
   input.setAttribute('autocapitalize', 'off');
   input.setAttribute('spellcheck', 'false');
-  input.setAttribute('lang', expectingGerman ? 'de' : 'en');
+  input.setAttribute('lang', dir === 'en_de' ? 'de' : 'en');
 
   input.value = '';
   input.disabled = false;
