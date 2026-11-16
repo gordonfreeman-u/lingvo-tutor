@@ -265,6 +265,11 @@ document.getElementById('btn-next').addEventListener('click', () => {
   // Focus the input immediately within the user-gesture tick so mobile browsers honour it
   const input = document.getElementById('quiz-input');
   if (!input.disabled) input.focus();
+  // Scroll so the Check/Skip buttons are visible above the keyboard
+  setTimeout(() => {
+    const btnRow = document.querySelector('#screen-quiz .btn-row');
+    if (btnRow) btnRow.scrollIntoView({ block: 'end', behavior: 'smooth' });
+  }, 150);
 });
 
 // Enter key advances to next word when feedback is showing
